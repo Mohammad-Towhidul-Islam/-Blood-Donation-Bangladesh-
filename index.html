@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রক্তদান বাংলাদেশ | জীবন বাঁচান</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lucide@latest">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i data-lucide="heart" class="heart-icon"></i>
+                    <span>রক্তদান বাংলাদেশ</span>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#home">হোম</a>
+                    <a href="#about">আমাদের সম্পর্কে</a>
+                    <a href="#blood-groups">রক্তের গ্রুপ</a>
+                    <a href="#donors">রক্তদাতা</a>
+                    <a href="#contact">যোগাযোগ</a>
+                </nav>
+
+                <div class="header-cta">
+                    <div class="emergency">
+                        <i data-lucide="phone"></i>
+                        <span>জরুরি: ১৬২৬৩</span>
+                    </div>
+                    <button class="login-btn">লগইন</button>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <nav>
+                    <a href="#home">হোম</a>
+                    <a href="#about">আমাদের সম্পর্কে</a>
+                    <a href="#blood-groups">রক্তের গ্রুপ</a>
+                    <a href="#donors">রক্তদাতা</a>
+                    <a href="#contact">যোগাযোগ</a>
+                </nav>
+                <div class="mobile-cta">
+                    <div class="emergency">
+                        <i data-lucide="phone"></i>
+                        <span>জরুরি: ১৬২৬৩</span>
+                    </div>
+                    <button class="login-btn">লগইন</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>জীবন বাঁচান, রক্ত দিন</h1>
+                    <p>আপনার একটি রক্তদান অনেকের জীবন বাঁচাতে পারে। আজই রক্তদাতা হিসাবে নিবন্ধন করুন</p>
+                    <div class="hero-buttons">
+                        <button class="primary-btn">রক্তদাতা হন</button>
+                        <button class="secondary-btn">রক্ত খুঁজুন</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blood Groups Section -->
+        <section id="blood-groups" class="blood-groups">
+            <div class="container">
+                <div class="section-header">
+                    <h2>রক্তের গ্রুপ অনুযায়ী <span>দাতার তথ্য</span></h2>
+                    <p>আপনার রক্তের গ্রুপ অনুযায়ী দাতা খুঁজুন এবং জীবন বাঁচানোর মহান কাজে অংশ নিন</p>
+                </div>
+
+                <div class="blood-cards">
+                    <!-- Blood cards will be inserted by JavaScript -->
+                </div>
+
+                <div class="emergency-notice">
+                    <h3>জরুরি বিজ্ঞপ্তি</h3>
+                    <p>এই মুহূর্তে <span>O- এবং A-</span> রক্তের গ্রুপের জরুরি প্রয়োজন রয়েছে। অনুগ্রহ করে যত তাড়াতাড়ি সম্ভব দান করুন।</p>
+                    <div class="hotline">
+                        <span>জরুরি হটলাইন:</span>
+                        <span>১৬২৬৩</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donor Listing Section -->
+        <section id="donors" class="donor-listing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>এলাকার <span>রক্তদাতা</span></h2>
+                    <p>আপনার এলাকার রক্তদাতাদের খুঁজুন এবং সরাসরি যোগাযোগ করুন</p>
+                </div>
+
+                <div class="filter-panel">
+                    <div class="filter-header">
+                        <i data-lucide="filter"></i>
+                        <h3>ফিল্টার করুন</h3>
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label>রক্তের গ্রুপ</label>
+                            <select id="blood-type-filter">
+                                <option value="all">সব গ্রুপ</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>এলাকা</label>
+                            <select id="location-filter">
+                                <option value="all">সব এলাকা</option>
+                                <option value="ধানমন্ডি">ধানমন্ডি</option>
+                                <option value="গুলশান">গুলশান</option>
+                                <option value="মিরপুর">মিরপুর</option>
+                                <option value="উত্তরা">উত্তরা</option>
+                                <option value="বনানী">বনানী</option>
+                                <option value="মোহাম্মদপুর">মোহাম্মদপুর</option>
+                            </select>
+                        </div>
+                        
+                        <button class="find-nearby-btn">
+                            <i data-lucide="map-pin"></i>
+                            কাছাকাছি খুঁজুন
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donor-count">
+                    <p><span id="donor-count">6</span> জন দাতা পাওয়া গেছে</p>
+                </div>
+
+                <div class="donor-cards">
+                    <!-- Donor cards will be inserted by JavaScript -->
+                </div>
+
+                <div class="no-donors" style="display: none;">
+                    <div class="no-donors-icon">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3>কোনো দাতা পাওয়া যায়নি</h3>
+                    <p>অন্য ফিল্টার ব্যবহার করে চেষ্টা করুন</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>কেন আমাদের <span>প্ল্যাটফর্ম</span> বেছে নিবেন?</h2>
+                    <p>আধুনিক প্রযুক্তি এবং মানবিক সেবার মাধ্যমে রক্তদান প্রক্রিয়াকে সহজ ও নিরাপদ করেছি</p>
+                </div>
+
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-red">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h3>সহজ রক্তদান</h3>
+                        <p>মাত্র কয়েক ক্লিকে রক্তদানের জন্য নিবন্ধন করুন এবং জীবন বাঁচান</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-blue">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <h3>নিকটস্থ সেন্টার</h3>
+                        <p>আপনার এলাকার সবচেয়ে কাছের রক্তদান কেন্দ্র খুঁজে নিন</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-green">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <h3>২৪/৭ সেবা</h3>
+                        <p>যেকোনো সময় জরুরি রক্তের প্রয়োজনে আমাদের সাথে যোগাযোগ করুন</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-purple">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>নিরাপদ প্রক্রিয়া</h3>
+                        <p>সম্পূর্ণ স্বাস্থ্যবিধি মেনে নিরাপদ রক্তদান নিশ্চিত করি</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-orange">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>যাচাইকৃত দাতা</h3>
+                        <p>সকল রক্তদাতার তথ্য যাচাই করা এবং বিশ্বস্ত</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon bg-teal">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <h3>তাৎক্ষণিক সংযোগ</h3>
+                        <p>দাতা এবং প্রয়োজনীয় ব্যক্তির মধ্যে তাৎক্ষণিক যোগাযোগ স্থাপন</p>
+                    </div>
+                </div>
+
+                <div class="cta-banner">
+                    <h3>আজই যোগ দিন আমাদের সাথে</h3>
+                    <p>আপনার একটি ছোট্ট অবদান অনেক বড় পরিবর্তন আনতে পারে</p>
+                    <div class="cta-buttons">
+                        <button class="primary-btn">রক্তদাতা হন</button>
+                        <button class="outline-btn">আরও জানুন</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i data-lucide="heart" class="heart-icon"></i>
+                        <span>রক্তদান বাংলাদেশ</span>
+                    </div>
+                    <p>জীবন বাঁচানোর মহান কাজে অংশ নিন। আপনার একটি রক্তদান অনেকের জীবন বাঁচাতে পারে।</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>লিংক</h4>
+                    <ul>
+                        <li><a href="#home">হোম</a></li>
+                        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#blood-groups">রক্তের গ্রুপ</a></li>
+                        <li><a href="#donors">রক্তদাতা</a></li>
+                        <li><a href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>যোগাযোগ</h4>
+                    <ul>
+                        <li><i data-lucide="phone"></i> জরুরি: ১৬২৬৩</li>
+                        <li><i data-lucide="mail"></i> contact@raktodan-bd.org</li>
+                        <li><i data-lucide="map-pin"></i> ঢাকা, বাংলাদেশ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; ২০২৩ রক্তদান বাংলাদেশ. সকল স্বত্ব সংরক্ষিত</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
